@@ -12,3 +12,5 @@
 ### js代码
 ![image](https://github.com/lhz0128/huan1/blob/master/img/2.png)
 
+可手动调用上一页、下一页   _slide.prevPage()/_slide.nextPage()
+
