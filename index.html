@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" onselectstart="return false"><!--使html的内容不能选择-->
+    <head>
+        <meta charset="utf-8">
+        <meta name=description content="3d">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <style type="text/css" id="css">
+            body{
+                margin: 0px;
+                padding: 0px;
+                
+            }
+            #wrap{
+                width: 600px;
+                height: 500px;
+                background: #8a8a8a;
+                margin: 50px auto;
+                overflow:hidden;
+                position: relative;
+
+            }
+            .mask{
+                width: 250px;
+                height: 250px;
+                background: rgba(255,255,255,0);
+                margin: 100px auto;
+                position: relative;
+            }
+            .box{
+                 width: 250px;
+                height: 250px;
+                transform: scale(1.2);
+                background: #f2f2f2;
+                position:absolute;
+                z-index:1;
+                text-align: center;
+                font-size: 50px;
+                opacity: 0;
+            }
+        </style>
+    </head> 
+    <body>
+    <div id="wrap">
+        <div class="mask">
+            <div class="box" style=" background: #fff"> <h1>1</h1></div>
+            <div class="box" style=" background: #7e7f80"> <h1>2</h1></div>
+            <div class="box" style=" background: green"><h1>3</h1></div>
+            <div class="box" style="background: red"><h1>4</h1></div>
+            <div class="box" style="background: #333"><h1>5</h1></div>
+            <div class="box" style="background: #f9f9f9"><h1>6</h1></div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/silde_hdp.js" ></script>
+   <script> 
+        var _slide = new SlideHdp('.mask', {btnshow:true, opacity:0.3, scale:0.9,tranX: 60,sens:3,current:3,mouse:true, touch:true});
+        //var defaultOpt = {tranX: 60, opacity:0.6,current:0, scale:0.8, sens:3,touch:true, mouse:true,btnshow:true, nextElem: $('.nextbtn'), prevElem:$('.prevbtn'), }
+        
+   </script>
+      
+    </body>
+</html>
