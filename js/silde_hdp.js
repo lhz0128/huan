@@ -1,7 +1,7 @@
 //lhz
-// create 2018-02-07
-(function(){
-    SlideHdp =  function(elem, option){
+//create 2018-02-07
+//
+function SlideHdp(elem, option){
     var defaultOpt = {tranX: 60, opacity:0.6,current:0, scale:0.8, sens:3,touch:true, mouse:true,btnshow:true, nextElem: $('.nextbtn'), prevElem:$('.prevbtn'), }
     var hdp_nextbtnStyle = 'position: absolute;top: 100px;color: #fff;font-family: "宋体";font-size: 30px; background: rgba(0, 0, 0, 0.4);padding: 10px;cursor: pointer;z-index: 99;left: -60px;';
     var hdp_prevbtnStyle = 'position: absolute;top: 100px;color: #fff; font-family: "宋体";font-size: 30px; background: rgba(0, 0, 0, 0.4);padding: 10px;cursor: pointer;z-index: 99;right: -60px;';
@@ -342,6 +342,4 @@
         $(".hdp_act").css('z-index', 5);
         $(".hdp_silde_one").css('z-index', 10);
     }
-    return SlideHdp;
 }
-})()
