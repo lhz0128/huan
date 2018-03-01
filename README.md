@@ -14,3 +14,4 @@
 
 可手动调用上一页、下一页   _slide.prevPage()/_slide.nextPage()
 
+预览地址  http://jsrun.net/vdqKp
