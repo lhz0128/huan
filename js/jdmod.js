@@ -201,4 +201,4 @@
             }, function(){$(".cd-module-toolbar .daimatxt").css("opacity","0");})
 
         }, 200)
-  })
+  })()
