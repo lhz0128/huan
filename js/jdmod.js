@@ -1,4 +1,5 @@
-let iconlist=["http://img10.360buyimg.com/zx/jfs/t1/109320/13/2656/5162/5e095233Eea377c38/74142e658f5564b8.png",
+  (function(){     
+    let iconlist=["http://img10.360buyimg.com/zx/jfs/t1/109320/13/2656/5162/5e095233Eea377c38/74142e658f5564b8.png",
                  "//img20.360buyimg.com/zx/jfs/t1/98183/14/14072/4573/5e61ba0bEfcd34507/53cea81faecb53e1.png",
                   "//img11.360buyimg.com/zx/jfs/t1/96492/7/14293/4671/5e62038cE9c55a196/7ba5c486c3bf5fc6.png",
                  "//img30.360buyimg.com/zx/jfs/t1/118041/36/10772/6054/5ef06782E7b78f321/2108a84d855ec4a2.png",
@@ -200,3 +201,4 @@ let iconlist=["http://img10.360buyimg.com/zx/jfs/t1/109320/13/2656/5162/5e095233
             }, function(){$(".cd-module-toolbar .daimatxt").css("opacity","0");})
 
         }, 200)
+  })
