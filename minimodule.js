@@ -1507,7 +1507,7 @@ class miniModule {
     }
 }
 
-
-new miniModule();
+window.mini = new miniModule();
+// new miniModule();
 
 
