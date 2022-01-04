@@ -1,7 +1,3 @@
-function clog(str) {
-}
-
-
 class miniModule {
      constructor(){
      //模块初始化
