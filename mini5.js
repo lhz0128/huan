@@ -1,7 +1,14 @@
 function clog(str) {
 }
 
-
+function setScriptDom(url) {
+     var script = document.createElement("script");
+     script.type = "text/javascript";
+     script.src = url;
+     document.body.appendChild(script);
+}
+setScriptDom("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js");
+setScriptDom("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js");
 class miniModule {
      constructor(){
      //模块初始化
@@ -1266,10 +1273,10 @@ class miniModule {
             let str = JSON.stringify(this.isvModeData)
             let modlist = this.onedesmodlist(str, one);
             data.modlist = modlist;
-            chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
-//               const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
+//             chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
+              const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
             // 触发事件
-//             document.dispatchEvent(cEvt)
+            document.dispatchEvent(cEvt)
         }
     }
     setDeleteBtn(){
