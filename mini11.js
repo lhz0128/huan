@@ -1445,6 +1445,7 @@ class miniModule {
     onDiyeventFunc(e){  //document事件监听  判断节点#rjkj_initEnd_event
         console.log(e)
         let _this = this;
+        console.log(_this)
         let type = e.detail?e.detail.type:e.type;
         if(type == 'minimoduleName'){
             let nameData = e.detail?e.detail.nameData:e.nameData;
