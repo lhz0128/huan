@@ -1502,7 +1502,7 @@ class miniModule {
         script3.innerHTML =str3;
         document.head.appendChild(script3);
         document.removeEventListener('miniDiyEvent', _this.onDiyeventFunc);
-        document.addEventListener('miniDiyEvent', _this.onDiyeventFunc);
+        document.addEventListener('miniDiyEvent', _this.onDiyeventFunc.bind(_this));
 
 
         // window.addEventListener("message", function( e ) {
