@@ -1266,10 +1266,10 @@ class miniModule {
             let str = JSON.stringify(this.isvModeData)
             let modlist = this.onedesmodlist(str, one);
             data.modlist = modlist;
-//             chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
-              const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
+            chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
+//               const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
             // 触发事件
-            document.dispatchEvent(cEvt)
+//             document.dispatchEvent(cEvt)
         }
     }
     setDeleteBtn(){
