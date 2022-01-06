@@ -1,14 +1,14 @@
 function clog(str) {
 }
-
-function setScriptDom(url) {
-     var script = document.createElement("script");
-     script.type = "text/javascript";
-     script.src = url;
-     document.body.appendChild(script);
+function setScriptDom(url) {  //加载js依赖
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = url;
+    document.body.appendChild(script);
 }
 setScriptDom("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js");
 setScriptDom("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js");
+
 class miniModule {
      constructor(){
      //模块初始化
@@ -24,7 +24,7 @@ class miniModule {
         gmMiniName:"左右滑动tc,循环无缝滑动,【循环翻转滑,触点轮播二-,【点击展开】,双层轮播-大,自定义换一换,质地动效轮播,点击展开模块,【开屏轮播】,【高阶美工】,【高阶美工】,【视频模块】,KV轮播模块,【多个展开】,二级卡盘模块,【二级卡盘】,【左右滑动】,【放大轮播】,弹出滑动模块,【左右滑动】,【高阶美工】,开屏轮播-弹,【左右滑动】,【左右滑动f,渐变轮播模块,【店铺头条】,【图片热区】,【高阶美工】,【多层轮播】,【创意轮播】,【弹出标签】,【滑动放大】,【触点轮播】,【弹出滑动加,【滑动卡盘弹,触点弹出标签,【多选切屏】,底部放大轮播,【折叠图片】,触点轮播模块,【视频模块】,【倒计时模块,【一键加购】,【渐变轮播】,滑动展开弹窗,轮播动效展开,【3D轮播】,【点击转盘】,3D翻页轮播,【切换轮播】,视频功能模块,【多选切屏】,轮播背景切换,二级宝贝卡盘,触点轮播弹出,【实时轮播】,卡盘放大轮播,【卡盘模块】,触点轮播弹出,触点动效轮播,【滑动卡盘】,滑动切换动效,放大轮播模块,滑动放大模块,【动效轮播】,图片功热区模,【循环无缝滑,放大轮播指针,二级竖版卡盘,滑动放大卡盘,【产品缩放轮,【触点轮播】,触点多层轮播,【转动卡盘】,双屏轮播vh,【弹幕卡盘】,选购助手-互,卡盘放大轮播,首屏创意轮播,图片功热区模,滑动导航模块,轮播导航模块,【触点轮播】,创意轮播模块,商品货架-品,触点轮播开屏,创意选色卡盘,【轮播展开】,【卡盘模块】,循环翻转模块,品牌定制商品,品牌定制商品,卡盘上滑动模,关联轮播模块,【直播模块】,触点动效轮播,关联轮播小图,【竖版卡盘】,【点击入会】,放大轮播tc,弹出滑动加购,放大轮播切换,放大轮播开屏,多个卡盘-个,渐变屏功能模,触点弹出标签,店铺头条模块,宝贝卡盘-个,TF视屏-个,竖版轮播-卡,【点击详情】,【色号选择器,动态弹框-个,点击详情模块,【触摸旋转】,【滑动选择】,自动滑屏-个,卡盘功能模块,滑动卡盘la,点击展开-个,【漂移轮播】,动态翻转模块,卡盘放大轮播,【二级多选卡,滑动触点轮播,【左右滑动t,【气泡推荐】,展开货架-排,倒计时模块-,放大轮播展开,【轮播与下滑,【KV轮播】,搭配试衣间模,【创意轮播A,【背景切换轮,左右滑动功能,动态轮播模块,【轮播直播弹,【弹出标签】,滑动卡盘模块,金币游戏gm,【滑动放大l,翻牌倒计时-,新版VR模块,左右自动滑动,无限滑动切换,无限滑动点击,视屏点开滑动,视屏点击展开,店铺头条高阶,日历订阅模块,卡盘放大3D,视屏滑动卡盘,切换卡盘点击,轮播展开触点,开屏KV滑动,卡盘轮播自动,卡盘切换视频,滑动切换背景,二级卡盘切换,卡片滑动轮播,弹出选择卡盘,点击展开缩放,【换行轮播】,转动卡盘2-,触点轮播弹出,【场景切换】,放大轮播点击,胡涛测试11,首屏多功能轮,放大位移轮播,触点3D酷炫,放大动效轮播,旋转展开轮播,换行二级卡盘,滑动展开轮播,头条会员卡片,【换行卡盘】,触点轮播弹出,动态图片模块,轮播背景切换,触点轮播gm,【视频滑动卡,视屏点击滑动,左右滑动gm,动效左右滑动,滑动3d模块,滑动选择gm,维氏军刀3D,卡盘背景轮播,自动滑屏gm,自动滑屏gm,触点弹出标签,弹窗触点轮播,换一换功能模,锚点导航模块,滑动旋转模块,循环无缝滑动"
       };  
       this.dom = {};
-//       this.init();
+      this.init();
     }
     
     //加载初始化
@@ -1273,8 +1273,9 @@ class miniModule {
             let str = JSON.stringify(this.isvModeData)
             let modlist = this.onedesmodlist(str, one);
             data.modlist = modlist;
-//             chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
-              const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
+            // chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
+            // 构造数据
+            const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
             // 触发事件
             document.dispatchEvent(cEvt)
         }
@@ -1465,15 +1466,8 @@ class miniModule {
                     _this.addDetailClick();
                 }catch(e){}
             }, 500)
-           
             return 
         }
-        // if(this.isTaobaoPage){
-        //      //手淘浏览器首页   
-        //      console.log("setTaobaoPage")
-        //      this.setTaobaoPage();
-        //      return
-        // }
         if(this.isSycmPageDetail){
             //生意参谋打开的首页页面
             this.initSycmPageDetail();
@@ -1487,20 +1481,39 @@ class miniModule {
             return 
         }
         let _this = this;
-        window.addEventListener("message", function( e ) {
-            if(e.data.popupEvent){
-               if(e.data.popupEvent.type=='minimoduleName'){
-                    let nameData = e.data.popupEvent.nameData;
-                    if(nameData.success && nameData.data && nameData.data.data){
-                        _this.config.gmMiniName += nameData.data.data;
-                    }
-                }else if(e.data.popupEvent.type=='importcodemini'){
-                    _this.pageImport();
-                }else if(e.data.popupEvent.type == "exportcodemini"){
-                    _this.pageExport();
+
+        let str3 = `var miniPostEvent = document.createEvent('Event');miniPostEvent.initEvent('miniDiyEvent', true, true);`
+        var script3 = document.createElement("script");
+        script3.innerHTML =str3;
+        document.head.appendChild(script3);
+        document.addEventListener('miniDiyEvent', ({e}) => {  //document事件监听  判断节点#rjkj_initEnd_event
+            if(e.type == 'minimoduleName'){
+                let nameData = e.nameData;
+                if(nameData.success && nameData.data && nameData.data.data){
+                    _this.config.gmMiniName += nameData.data.data;
                 }
+            }else if(e.type=='importcodemini'){
+                _this.pageImport();
+            }else if(e.type == "exportcodemini"){
+                _this.pageExport();
             }
-        }, true );
+        });
+
+
+        // window.addEventListener("message", function( e ) {
+        //     if(e.data.popupEvent){
+        //        if(e.data.popupEvent.type=='minimoduleName'){
+        //             let nameData = e.data.popupEvent.nameData;
+        //             if(nameData.success && nameData.data && nameData.data.data){
+        //                 _this.config.gmMiniName += nameData.data.data;
+        //             }
+        //         }else if(e.data.popupEvent.type=='importcodemini'){
+        //             _this.pageImport();
+        //         }else if(e.data.popupEvent.type == "exportcodemini"){
+        //             _this.pageExport();
+        //         }
+        //     }
+        // }, true );
 
         let isLoading = await this.loading();
         if(!isLoading.success){   clog('插件加载失败')}
@@ -1509,7 +1522,6 @@ class miniModule {
         let ParamRes = await this.getParam();
         if(!ParamRes.success){ clog('参数加载失败')}
         console.log(this.config)
-       
         this.domInit(); 
         // this.getModuleData();
         // let res = await this.getWpGetModuleFormSchema();
@@ -1519,6 +1531,5 @@ class miniModule {
 
 
 window.miniMod = new miniModule();
-
 
 
