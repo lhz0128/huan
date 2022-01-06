@@ -1486,7 +1486,7 @@ class miniModule {
         var script3 = document.createElement("script");
         script3.innerHTML =str3;
         document.head.appendChild(script3);
-        document.addEventListener('miniDiyEvent', ({e}) => {  //document事件监听  判断节点#rjkj_initEnd_event
+        document.addEventListener('miniDiyEvent', (e) => {  //document事件监听  判断节点#rjkj_initEnd_event
             if(e.type == 'minimoduleName'){
                 let nameData = e.nameData;
                 if(nameData.success && nameData.data && nameData.data.data){
