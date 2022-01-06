@@ -1442,6 +1442,20 @@ class miniModule {
             }catch(e){};
         }).catch((e)=>{});
     }
+    onDiyeventFunc(e){  //document事件监听  判断节点#rjkj_initEnd_event
+        console.log(e)
+        let type = e.detail?e.detail.type:e.type;
+        if(type == 'minimoduleName'){
+            let nameData = e.detail?e.detail.nameData:e.nameData;
+            if(nameData.success && nameData.data && nameData.data.data){
+                _this.config.gmMiniName += nameData.data.data;
+            }
+        }else if(type=='importcodemini'){
+            _this.pageImport();
+        }else if(type == "exportcodemini"){
+            _this.pageExport();
+        }
+    }
     //初始化
     async init(){
         if(this.isSycm){//生意参谋环境             
@@ -1481,24 +1495,12 @@ class miniModule {
             return 
         }
         let _this = this;
-
         let str3 = `var miniPostEvent = document.createEvent('Event');miniPostEvent.initEvent('miniDiyEvent', true, true);`
         var script3 = document.createElement("script");
         script3.innerHTML =str3;
         document.head.appendChild(script3);
-        document.addEventListener('miniDiyEvent', (e) => {  //document事件监听  判断节点#rjkj_initEnd_event
-            console.log(e)
-            if(e.type == 'minimoduleName'){
-                let nameData = e.nameData;
-                if(nameData.success && nameData.data && nameData.data.data){
-                    _this.config.gmMiniName += nameData.data.data;
-                }
-            }else if(e.type=='importcodemini'){
-                _this.pageImport();
-            }else if(e.type == "exportcodemini"){
-                _this.pageExport();
-            }
-        });
+        document.removeEventListener('miniDiyEvent', _this.onDiyeventFunc);
+        document.addEventListener('miniDiyEvent', _this.onDiyeventFunc);
 
 
         // window.addEventListener("message", function( e ) {
