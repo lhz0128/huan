@@ -1501,8 +1501,9 @@ class miniModule {
         var script3 = document.createElement("script");
         script3.innerHTML =str3;
         document.head.appendChild(script3);
-        document.removeEventListener('miniDiyEvent', _this.onDiyeventFunc);
-        document.addEventListener('miniDiyEvent', _this.onDiyeventFunc.bind(_this));
+        var handler = function(e){_this.onDiyeventFunc(e);};
+        document.removeEventListener('miniDiyEvent', handler);
+        document.addEventListener('miniDiyEvent', handler);
 
 
         // window.addEventListener("message", function( e ) {
