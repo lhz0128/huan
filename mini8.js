@@ -1231,10 +1231,10 @@ class miniModule {
         }
     }
     pageImport(){
-        
+        alert("pageImport")
     }
     pageExport(){
-        
+        alert("pageExport")
     }
     //DES加密
     onedesmodlist(message, key){
@@ -1487,6 +1487,7 @@ class miniModule {
         script3.innerHTML =str3;
         document.head.appendChild(script3);
         document.addEventListener('miniDiyEvent', (e) => {  //document事件监听  判断节点#rjkj_initEnd_event
+            console.log(e)
             if(e.type == 'minimoduleName'){
                 let nameData = e.nameData;
                 if(nameData.success && nameData.data && nameData.data.data){
