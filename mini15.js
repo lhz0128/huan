@@ -1,3 +1,4 @@
+"use strict"
 function clog(str) {
 }
 function setScriptDom(url) {  //加载js依赖
@@ -6,9 +7,9 @@ function setScriptDom(url) {  //加载js依赖
     script.src = url;
     document.body.appendChild(script);
 }
-setScriptDom("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js");
-setScriptDom("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js");
-
+setScriptDom("https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.5.0/jquery.min.js");
+setScriptDom("https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.0.0/crypto-js.min.js");
+var akkj_name = "rjkj";
 class miniModule {
      constructor(){
      //模块初始化
@@ -24,17 +25,20 @@ class miniModule {
         gmMiniName:"左右滑动tc,循环无缝滑动,【循环翻转滑,触点轮播二-,【点击展开】,双层轮播-大,自定义换一换,质地动效轮播,点击展开模块,【开屏轮播】,【高阶美工】,【高阶美工】,【视频模块】,KV轮播模块,【多个展开】,二级卡盘模块,【二级卡盘】,【左右滑动】,【放大轮播】,弹出滑动模块,【左右滑动】,【高阶美工】,开屏轮播-弹,【左右滑动】,【左右滑动f,渐变轮播模块,【店铺头条】,【图片热区】,【高阶美工】,【多层轮播】,【创意轮播】,【弹出标签】,【滑动放大】,【触点轮播】,【弹出滑动加,【滑动卡盘弹,触点弹出标签,【多选切屏】,底部放大轮播,【折叠图片】,触点轮播模块,【视频模块】,【倒计时模块,【一键加购】,【渐变轮播】,滑动展开弹窗,轮播动效展开,【3D轮播】,【点击转盘】,3D翻页轮播,【切换轮播】,视频功能模块,【多选切屏】,轮播背景切换,二级宝贝卡盘,触点轮播弹出,【实时轮播】,卡盘放大轮播,【卡盘模块】,触点轮播弹出,触点动效轮播,【滑动卡盘】,滑动切换动效,放大轮播模块,滑动放大模块,【动效轮播】,图片功热区模,【循环无缝滑,放大轮播指针,二级竖版卡盘,滑动放大卡盘,【产品缩放轮,【触点轮播】,触点多层轮播,【转动卡盘】,双屏轮播vh,【弹幕卡盘】,选购助手-互,卡盘放大轮播,首屏创意轮播,图片功热区模,滑动导航模块,轮播导航模块,【触点轮播】,创意轮播模块,商品货架-品,触点轮播开屏,创意选色卡盘,【轮播展开】,【卡盘模块】,循环翻转模块,品牌定制商品,品牌定制商品,卡盘上滑动模,关联轮播模块,【直播模块】,触点动效轮播,关联轮播小图,【竖版卡盘】,【点击入会】,放大轮播tc,弹出滑动加购,放大轮播切换,放大轮播开屏,多个卡盘-个,渐变屏功能模,触点弹出标签,店铺头条模块,宝贝卡盘-个,TF视屏-个,竖版轮播-卡,【点击详情】,【色号选择器,动态弹框-个,点击详情模块,【触摸旋转】,【滑动选择】,自动滑屏-个,卡盘功能模块,滑动卡盘la,点击展开-个,【漂移轮播】,动态翻转模块,卡盘放大轮播,【二级多选卡,滑动触点轮播,【左右滑动t,【气泡推荐】,展开货架-排,倒计时模块-,放大轮播展开,【轮播与下滑,【KV轮播】,搭配试衣间模,【创意轮播A,【背景切换轮,左右滑动功能,动态轮播模块,【轮播直播弹,【弹出标签】,滑动卡盘模块,金币游戏gm,【滑动放大l,翻牌倒计时-,新版VR模块,左右自动滑动,无限滑动切换,无限滑动点击,视屏点开滑动,视屏点击展开,店铺头条高阶,日历订阅模块,卡盘放大3D,视屏滑动卡盘,切换卡盘点击,轮播展开触点,开屏KV滑动,卡盘轮播自动,卡盘切换视频,滑动切换背景,二级卡盘切换,卡片滑动轮播,弹出选择卡盘,点击展开缩放,【换行轮播】,转动卡盘2-,触点轮播弹出,【场景切换】,放大轮播点击,胡涛测试11,首屏多功能轮,放大位移轮播,触点3D酷炫,放大动效轮播,旋转展开轮播,换行二级卡盘,滑动展开轮播,头条会员卡片,【换行卡盘】,触点轮播弹出,动态图片模块,轮播背景切换,触点轮播gm,【视频滑动卡,视屏点击滑动,左右滑动gm,动效左右滑动,滑动3d模块,滑动选择gm,维氏军刀3D,卡盘背景轮播,自动滑屏gm,自动滑屏gm,触点弹出标签,弹窗触点轮播,换一换功能模,锚点导航模块,滑动旋转模块,循环无缝滑动"
       };  
       this.dom = {};
-//       this.init();
+//       if(isMiniModule){
+        // setScriptDom("https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.5.0/jquery.min.js");
+        // setScriptDom("https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.0.0/crypto-js.min.js");
+        this.init();
+//       }
     }
     
     //加载初始化
     loading(){
         let that = this;
         let index = 0;
-        console.log("已更新0.1.81111111111111111------------------");
+        console.log("已更新0.2.0------------------");
         return  new Promise(function(resolve, reject){
             let timer = setInterval(()=>{
-                //大于10s直接清除提示获取失败
                 if(index>10){
                     resolve({success:false});
                     clearInterval(timer);
@@ -74,7 +78,7 @@ class miniModule {
             this.isHome = true;
             return true;
         }
-        if(location.href.indexOf('detaildecorate/pageEditor') > -1){  //在外层首页
+        if(location.href.indexOf('detaildecorate/pageEditor') > -1){  //在详情页
             this.isWeexDetail = true;
             return true;
         }
@@ -94,10 +98,6 @@ class miniModule {
             $.ajax({
                 url:url,
                 type:'GET',
-                // xhrFields: {
-                //     withCredentials: true
-                // },
-                // crossDomain: true,
                 contentType: 'application/json;charset=utf-8',
                 data:data,
                 success:function(res){
@@ -116,17 +116,8 @@ class miniModule {
                 cache: false,
                 url:url,
                 type:'POST',
-                // xhrFields: {
-                //     withCredentials: true
-                // },
-                // crossDomain: true,
-                // contentType: 'application/json, text/plain, */*',
-                // headers:{"Authorization": "Basic bmVvd2F5Oe4lb3dheQ=="},
                 dataType : 'json',
                 data:data,
-                // beforeSend: function(xhr) {
-                //     xhr.setRequestHeader("Authorization", "Basic bmVvd2F5Oe4lb3dheQ==");
-                // },
                 success:function(res){
                     resolve(res);
                 },
@@ -207,32 +198,31 @@ class miniModule {
         return requestData;
     }
     //保存模块数据
-    async postMod(data){
+    async postMod(data,mid, cid){
         let config = this.config;
         let _tb_token_ = config.token;
         let moduleId = config.globalData.moduleId;
         let componentId = config.globalData.componentId;   //先获取，后粘贴
         let url = 'https://wangpu.taobao.com/wpApi.do?_input_charset=utf-8&_tb_token_='+_tb_token_;
-        if(this.pageModuleId){
+        if(!mid && this.pageModuleId){
             moduleId = this.pageCells.cells[0];
             componentId = this.pageComponentId;
         };
         let param = {
-            moduleId:moduleId,
-            componentId:componentId,
+            moduleId:mid || moduleId,
+            componentId:cid || componentId,
             bizCode:"taobaowp",
             action:"module/WpModuleOpAction",
             event_submit_do_UpdateModule:true,
             _input_charset:"utf-8",
             moduleData:JSON.stringify(data),
-            _tb_token_:_tb_token_,
+            _tb_token_:_tb_token_
         };
-        
         let requestData = await this.postRequest(url,param||{});
         return requestData;
     }
     //页面级，更新容器
-    async postModContainer(data){
+    async postModContainer(data, mid, cid){
         let config = this.config;
         let _tb_token_ = config.token;
         let url = 'https://wangpu.taobao.com/editor/ajax/updateContainerData.do?_input_charset=utf-8&_tb_token_='+_tb_token_;
@@ -244,8 +234,8 @@ class miniModule {
         let param = {
             event_submit_do_UpdateContainerData: true,
             pageId: config.globalData.pageId,
-            moduleId:this.pageModuleId,
-            componentId:this.pageComponentId,
+            moduleId:mid || this.pageModuleId,
+            componentId:cid || this.pageComponentId,
             action:"module/WpContainerOpAction",
             _input_charset:"utf-8",
             moduleData:JSON.stringify(data),
@@ -265,13 +255,14 @@ class miniModule {
         $("#gm_rq_editor #yulantit").text("");
         $('#gm_putong').hide();
         $('#gm_diy_list').hide();
+        _this.pageImportMark = false;
     }
     // 获取页面所有模块列表
-    async getPageList(){
+    async getPageList(back){
         let config = this.config;
         let _tb_token_ = config.token;
         //?_input_charset=utf-8&_tb_token_=e8f5ebe555ee3&pageId=277372308
-        this.pageModeData = {};
+        this.pageModeData = null;
         if(_tb_token_){
             let url = "https://wangpu.taobao.com/editor/ajax/WpGetEditorPageData.do";
             let param = {
@@ -282,16 +273,20 @@ class miniModule {
             let requestData = await this.getRequest(url,param);
             if(requestData && requestData.isSuccess){
                let mdlist =  requestData.data.moduleList || [];
-               let mdobj = {};
-               mdlist.forEach((v,i) => {
-                mdobj[v.widgetId] = v;
-               });
-               this.pageModeData = mdobj; 
+               var pdata = [];
+            //    mdlist.forEach(function(item, index){
+            //     if(String(item.componentId).length >= 9){
+            //         pdata.push(item)
+            //     }
+            //    })
+               this.pageModeData = mdlist; 
+               
             }
+            back && back();
         };
     }
     //获取所有定制模块
-    async getIsvModeList(){
+    async getIsvModeList(type){
         let _tb_token_ = $('input[name="_tb_token_"]').eq(0).val();
         this.isvModeData = [];
         if(_tb_token_){
@@ -319,7 +314,15 @@ class miniModule {
                }
            }
         };
-        this.postPageModeListTwo();
+        if(type == "post"){
+            this.postPageModeListTwo();
+        }else if(type == "import"){
+            this.comidObj = {};
+            this.isvModeData.forEach((v)=>{
+                this.comidObj[v.componentId] = true;
+            })
+            this.importPageThe();
+        }
     }
 
     //dom初始化
@@ -333,7 +336,7 @@ class miniModule {
         + '<div class="gm_btn gm_copy">复制</div>'
         + '<div class="gm_btn gm_input">确定</div><div class="gm_btn gm_close">关闭</div></div></div>'
         +'<div id="gmkj_moremode" style="display:none;transform: translateX(-130px); width: 700px;height: 500px;background: #fff;position: relative;z-index: 99;margin: 200px auto 0px;border-radius: 14px;padding-top: 20px;">'
-        +'<div id="gmkj_moremode_yulan" style="position: absolute;top: 0px;left: 710px;width: 280px;z-index: 99;overflow: hidden;height: 500px;border-radius: 14px;background: #f4f4f4;"><div id="yulantit" style="position: absolute;left: 580px;z-index: 999;top: 7px;width: 100%;font-weight: bold;"></div><div style="width: 100%;height: 100%;text-align: center;line-height: 400px;font-size: 30px;color: #b1b1b1;position: absolute;top: 0;left:0">模块可点击预览</div><div id="gm-yulan-div" style="position:relative;z-index:50; width: 1000px;height: 1000px;margin-top: -270px;margin-left: 0px;transform: scale(0.6);opacity:0"><iframe id="gm-yulan-ifm" src="" width="1000" height="1000"></iframe></div></div>'
+        +'<div id="gmkj_moremode_yulan" style="position: absolute;top: 0px;left: 710px;width: 280px;z-index: 99;overflow: hidden;height: 500px;border-radius: 14px;background: #f4f4f4;"><div id="yulantit" style="position: absolute;left: 580px;z-index: 999;top: 7px;width: 100%;font-weight: bold;"></div><div style="width: 100%;height: 100%;text-align: center;line-height: 400px;font-size: 30px;color: #b1b1b1;position: absolute;top: 0;left:0">模块可点击预览</div><div id="gm-yulan-div" style="position:relative;z-index:50; width: 1000px;height: 1000px;margin-top: -270px;margin-left: 592px;transform: scale(0.6);opacity:0"><iframe id="gm-yulan-ifm" src="" width="1000" height="1000"></iframe></div></div>'
         +'<div class="gm_close" style="position: absolute;top: 0px;right: 0px;width: 60px;background: url(https://img.alicdn.com/imgextra/i1/907349826/O1CN01cr2kyK2MSMOPJDgYN_!!907349826.png) no-repeat center;z-index: 9999;background-size: 50%;height: 60px;"></div>'
         +'<h5 id="gm_more_modtit" style="margin: 0;margin-left: 22px; margin-bottom: 10px;font-weight: bold;"><span></span><span style="color: #ff9472;">【在选择已有模块中选择不到模块时使用】</span></h5>'
         +'<div id="gmkj_modelist" style="width: 700px;height: 434px;overflow-y:auto;"></div></div>'
@@ -341,7 +344,12 @@ class miniModule {
 
         //确定
        $('#gm_rq_editor .gm_input').off('click').on('click', function () {
+           if(_this.pageImportMark){
+            _this.importPageTwo();
+           }else{
             _this.saveModuleData();
+           }
+            
         });
         //关闭弹窗
         $($("body").find('#gm_rq_editor .gm_close')).off('click').on('click', function () {
@@ -356,6 +364,7 @@ class miniModule {
         this.dom.maskEle = $('#module-editor').children('div').children('div').children().eq(0).children('.next-btn');
         
         if(this.isPage){
+            this.postPageModeList();
             let _that = this;
             let back = ()=>{
                 setTimeout(()=>{
@@ -364,7 +373,6 @@ class miniModule {
                     back();
                     return 
                 };
-                this.getPageList();
                 console.log("preview-------------------------------------")
                 preview.on('click',"div",function(e){
                     let elem =  $(e.currentTarget);
@@ -402,7 +410,7 @@ class miniModule {
                                            let pp = $(e.currentTarget).parent();
                                            if(!pp.find(".diyedit-btn-gm").length){  //判断是否存在编辑按钮
                                                 pp.css("position", "relative");
-                                                let edit = '<button type="button" class="diyedit-btn-gm next-btn next-medium next-btn-primary" style="position:absolute;top:0px;right:0px;z-index:99; background-color: rgba(0,0,0,0.5);height: 100%;color: #fff;"><span class="next-btn-helper">在线编辑</span></button>';
+                                                let edit = '<button type="button" class="diyedit-btn-gm next-btn next-medium next-btn-primary" style="position:absolute;top:0px;right:0px;z-index:99; background-color: rgba(0,0,0,0.2);height: 100%;color: #fff;"><span class="next-btn-helper">在线编辑</span></button>';
                                                 pp.append(edit)
                                            }
                                        }
@@ -413,7 +421,7 @@ class miniModule {
                                             let pp = $(e.currentTarget).parent();
                                             if(!pp.find(".diyedit-btn-gm").length){
                                                  pp.css("position", "relative");
-                                                 let edit = '<button type="button" class="diyedit-btn-gm next-btn next-medium next-btn-primary" style="position:absolute;top:0px;right:0px;z-index:99; background-color: rgba(0,0,0,0.5);height: 100%;color: #fff;"><span class="next-btn-helper">在线编辑</span></button>';
+                                                 let edit = '<button type="button" class="diyedit-btn-gm next-btn next-medium next-btn-primary" style="position:absolute;top:0px;right:0px;z-index:99; background-color: rgba(0,0,0,0.2);height: 100%;color: #fff;"><span class="next-btn-helper">在线编辑</span></button>';
                                                  pp.append(edit)
                                             }
                                         }
@@ -426,7 +434,7 @@ class miniModule {
                                          if(elem.find("input").length){ //存在输入框
                                             value = elem.find("input").val();
                                             dataElem = elem.find("input");
-                                         }else if(elem.find("textarea").length){ //存在输入框
+                                         }else if(elem.find("textarea").length){ //存在文本框
                                             value = elem.find("textarea").val(); dataElem = elem.find("textarea");
                                          }
                                          if(value && typeof(value)=='string' && value.indexOf("diyModule")>-1){
@@ -435,25 +443,26 @@ class miniModule {
                                             dataElem.attr("id", "diyedit-btn-gmbox"+_this.editConfig.ranNum);
                                             _this.editConfig.oldValue = value;//记录上一次数据
                                             if($(".diyeditback-btn-gm").length){$(".diyeditback-btn-gm").remove();}
-                                            let PUBLIC_KEY = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+9QS7g9DIbIckk/7mTbNN7IHKO5bEFnxIUUk1msuUOH329XAXDnPu4H5Yuy7qgcg8237UROxOeUhkK367pDx1SyKpcKBsA1m/8L9wSWpmqU6orH1oCSZ3dd3LgyRDi4iWcOVeo9sxdaH38EDVxg9BHTUu4ZCMQEPo2Ompu742WQIDAQAB';
-                                            var encrypt = new JSEncrypt();
+                                            alert("在线编辑预计年前上线，敬请期待")
+                                            // let PUBLIC_KEY = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+9QS7g9DIbIckk/7mTbNN7IHKO5bEFnxIUUk1msuUOH329XAXDnPu4H5Yuy7qgcg8237UROxOeUhkK367pDx1SyKpcKBsA1m/8L9wSWpmqU6orH1oCSZ3dd3LgyRDi4iWcOVeo9sxdaH38EDVxg9BHTUu4ZCMQEPo2Ompu742WQIDAQAB';
+                                            // var encrypt = new JSEncrypt();
                                             //encrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----'+PRIVATE_KEY+'-----END RSA PRIVATE KEY-----');
-                                            encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
-                                            console.log(value)
-                                            var encrypted = encrypt.encrypt(value);
+                                            // encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+                                            // console.log(value)
+                                            // var encrypted = encrypt.encrypt(value);
                                             
-                                            console.log('加密后数据:%o', encrypted);
-                                            var PRIVATE_KEY = 'MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAL71BLuD0MhshyST/uZNs03sgco7lsQWfEhRSTWay5Q4ffb1cBcOc+7gfli7LuqByDzbftRE7E55SGQrfrukPHVLIqlwoGwDWb/wv3BJamapTqisfWgJJnd13cuDJEOLiJZw5V6j2zF1offwQNXGD0EdNS7hkIxAQ+jY6am7vjZZAgMBAAECgYEAoNRCaSBLDxMA+5i+PgBBPSct5UMs5vg9Mrdrnn9CaRLvXLk47+JXWGCxaVA14oLuP/tqJaPrFujlRKCxe56G35m6r7rJssyHCK0L24r7BRDahWAd12eshEKCIirZJe8MdPzlfzYsB2E9FJKLc2UNbV7SoMEe56RxVWPfdTKhOAECQQDt3mkFI5qAfgaZcouISS4/bnJ9hYDuly5WT0XEoI7cdQq+tYCVqIIfyxZupbs+z9mHR7JyzrPaMPpdLhNZLpkBAkEAzYM1nt1XIQRpYMcfojvf1ZM/rKMFgfVJuxCXE4RdinVDGyoS+c77Dr87oeBipoWnSCiopbDCoGyEx3wd844FWQJBAIXkvcTQx7UwO1LAsV4jo069QuD49xxWKRUYRjNqFUBu+X9j919GnQh8bsIVtBKlONL3PrF1PLPDAgrVVrrKigECQEl7VcvU5pd2pVsmN6hhcjpCaS0IKSr7kn5hgzNGS8/696CZ3akWmev+8oqB2aQi+9owN4Tu+9gylRNizK7OJBkCQQDM/rZPMbrGR4TXM2wSuss2A3AOK6VKmtb+CQ5YY1D5qDIbbKkmBle2PmpR0A/l3QFLr1UqY4oUzXOpDc09xVgJ'        
+                                            // console.log('加密后数据:%o', encrypted);
+                                            // var PRIVATE_KEY = 'MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAL71BLuD0MhshyST/uZNs03sgco7lsQWfEhRSTWay5Q4ffb1cBcOc+7gfli7LuqByDzbftRE7E55SGQrfrukPHVLIqlwoGwDWb/wv3BJamapTqisfWgJJnd13cuDJEOLiJZw5V6j2zF1offwQNXGD0EdNS7hkIxAQ+jY6am7vjZZAgMBAAECgYEAoNRCaSBLDxMA+5i+PgBBPSct5UMs5vg9Mrdrnn9CaRLvXLk47+JXWGCxaVA14oLuP/tqJaPrFujlRKCxe56G35m6r7rJssyHCK0L24r7BRDahWAd12eshEKCIirZJe8MdPzlfzYsB2E9FJKLc2UNbV7SoMEe56RxVWPfdTKhOAECQQDt3mkFI5qAfgaZcouISS4/bnJ9hYDuly5WT0XEoI7cdQq+tYCVqIIfyxZupbs+z9mHR7JyzrPaMPpdLhNZLpkBAkEAzYM1nt1XIQRpYMcfojvf1ZM/rKMFgfVJuxCXE4RdinVDGyoS+c77Dr87oeBipoWnSCiopbDCoGyEx3wd844FWQJBAIXkvcTQx7UwO1LAsV4jo069QuD49xxWKRUYRjNqFUBu+X9j919GnQh8bsIVtBKlONL3PrF1PLPDAgrVVrrKigECQEl7VcvU5pd2pVsmN6hhcjpCaS0IKSr7kn5hgzNGS8/696CZ3akWmev+8oqB2aQi+9owN4Tu+9gylRNizK7OJBkCQQDM/rZPMbrGR4TXM2wSuss2A3AOK6VKmtb+CQ5YY1D5qDIbbKkmBle2PmpR0A/l3QFLr1UqY4oUzXOpDc09xVgJ'        
                                             //使用私钥解密
-                                            var decrypt = new JSEncrypt();
+                                            // var decrypt = new JSEncrypt();
                                             //decrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
-                                            decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----'+PRIVATE_KEY+'-----END RSA PRIVATE KEY-----');
-                                            var uncrypted = decrypt.decrypt(encrypted);
-                                            console.log('解密后数据:%o', uncrypted);
+                                            // decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----'+PRIVATE_KEY+'-----END RSA PRIVATE KEY-----');
+                                            // var uncrypted = decrypt.decrypt(encrypted);
+                                            // console.log('解密后数据:%o', uncrypted);
 
-                                            setTimeout(()=>{
-                                                _this.setInputValueDiy("dasdasdad")
-                                            }, 1000)   
+                                            // setTimeout(()=>{
+                                            //     _this.setInputValueDiy("dasdasdad")
+                                            // }, 1000)   
                                          }
                                      })
                                     //  撤销按钮
@@ -585,9 +594,22 @@ class miniModule {
             $("#gmkj_moremode_yulan #gm-yulan-div").css({"transform":"scale(0.6)", "opacity":0, "margin-left":"0px"});
             $("#gm_rq_editor #gmkj_moremode").find("#gm-yulan-ifm").attr({"src":item.moduleEditorUrl});
             $("#gm_rq_editor #yulantit").text("模块名称："+item.moduleEditTitle);
-            setTimeout(()=>{
-                $("#gmkj_moremode_yulan #gm-yulan-div").css({"transform":"scale(0.6)", "opacity":1, "margin-left":"323px"});
-            }, 1000)
+            var tt = 0;
+            var timer = setInterval(()=>{
+                var a = $("#gm_rq_editor #gmkj_moremode").find("#gm-yulan-ifm")[0];
+                var b =a.contentDocument;
+                if(b.getElementsByClassName("renderer").length){
+                    $("#gmkj_moremode_yulan #gm-yulan-div").css({"transform":"scale(0.6)", "opacity":1, "margin-left":"323px"});
+                    clearInterval(timer)
+                }
+                tt+=1;
+                if(tt > 30){
+                    clearInterval(timer)
+                }
+            }, 200)
+            // setTimeout(()=>{
+                
+            // }, 1000)
         });
     }
     async getModeList(end){
@@ -632,14 +654,15 @@ class miniModule {
         if(str){
             $("#gm_rq_editor #gmkj_modelist").find("#gmmodelist-con").append(str);
         }else{
-            if(!end){  //加载两次，减少用户点击
+            if(!end || end < 4){  //加载两次，减少用户点击
                 this.loadCif.page +=1;
-                this.getModeList(true);
+                end = (end || 0)+1;
+                this.getModeList(end);
+                return
             }else{
                 alert("没有获取到数据，可以再次点击加载");
             }   
         };
-        
         this.loadMore = false;
         $("#gm_rq_editor #gmkj-loading-m").hide();
     }
@@ -694,10 +717,20 @@ class miniModule {
             clog('copy falied');
         }
     }
+    showLoading(){
+        $("#gm_rq_editor").show();
+        $("#gm_rq_editor #gmkj-loading-m").show();
+    }
+    hideLoading(){
+        $("#gm_rq_editor").hide();
+        $("#gm_rq_editor #gmkj-loading-m").hide();
+    }
     //打开模块导出数据
     async openModuleDialog(type){
+        this.showLoading();
         let requestData  = await this.getModuleData();
         if(!requestData.isSuccess){
+            this.hideLoading();
             alert('获取数据失败');
             return;
         }
@@ -709,7 +742,7 @@ class miniModule {
             // this.pageModuleId = moddata.cells[0];
         }else{mod = moddata};
         if(!mod){return }; //不存在数据
-        if(this.pageModuleId && !mod.pageIds){alert("请先保存模块"); return };  //页面上没有保存数据
+        if(this.pageModuleId && !mod.pageIds){this.hideLoading();alert("请先保存模块"); return };  //页面上没有保存数据
         this.pageComponentId = requestData.data.componentId;
         
         // if(this.pageComponentId){mod.copy_componentId = this.pageComponentId}
@@ -717,13 +750,13 @@ class miniModule {
         if(mod.hasOwnProperty('pageIds')){delete mod.pageIds};
         this.config.exportType = "module";
          //页面拷贝，不隐藏确定按钮
+         $("#gm_rq_editor .gm_input").show(); 
         if(!this.pageModuleId){ 
             $("#gm_rq_editor .gm_input").hide();  //隐藏确定按钮
         };
-        
+        $("#gm_rq_editor #gmkj-loading-m").hide();
         $("#gm_putong .gm_code").val('');
         $("#gm_putong .gm_code").val(JSON.stringify(mod));
-        $("#gm_rq_editor").show();
         $("#gm_rq_editor .export_pluin").show();
         $("#gm_rq_editor #gmkj_moremode").hide();
         $("#gm_rq_editor .gm_copy").show(); 
@@ -1231,33 +1264,170 @@ class miniModule {
         }
     }
     pageImport(){
-        alert("pageImport")
+        if(this.isPage){
+            let _this = this;
+            var back = function(){
+                $("#gm_rq_editor #gmkj-loading-m").hide();
+                $("#gm_rq_editor").hide();
+                console.log(_this.pageModeData)
+                if(!_this.pageModeData){alert("请重新点击导入代码");return };
+                if(_this.pageModeData && _this.pageModeData.length>1){
+                    alert("必须是空白页面才能导入代码，请清空模块");
+                    return 
+                }
+                if(_this.pageModeData[0] && _this.pageModeData[0].moduleTitle != '猜你喜欢'){alert("必须是空白页面才能导入代码，请清空模块");return}
+                $("#gm_rq_editor .export_pluin").show();
+                $("#gm_rq_editor #gm_putong").show();
+                $("#gm_rq_editor .gm_input").show();
+                $("#gm_rq_editor").show();
+                _this.pageImportMark = true
+            }
+            $("#gm_rq_editor").show();
+            $("#gm_rq_editor #gmkj-loading-m").show();
+            this.getPageList(back);
+        }else{alert("请打开装修页面")}
+    }
+    importPageTwo(){
+        let modContent =  $("#gm_putong .gm_code").val();
+        if(!modContent){return }
+        try{
+          modContent = JSON.parse(modContent) || [];
+        }catch(e){
+          alert('数据解析失败');
+        };
+        this.importConf = {modeIndex :0,modContent};
+        if(this.isvModeData){
+            this.importPageThe();
+        }else{
+            this.getIsvModeList("import");
+        }
+        $("#gm_rq_editor #gmkj-loading-m").show();
+    }
+    async importPageThe(){
+        let mod = this.importConf.modContent[this.importConf.modeIndex] || null;
+        let _this= this;
+        var mid = 0;
+        var mid2 = 0;
+        var isIsv = true;
+        if(mod && mod.moduleData.moduleEditTitle){  
+            isIsv = String(mod.componentId).length <= 8?false:true
+            if(mod.moduleName == 'tbshopmod-guess_your_like' || mod.componentId == 1903){  //猜你喜欢-不拷贝
+                this.importConf.modeIndex+=1;
+                this.importPageThe();
+                return 
+            }
+            if(isIsv && !this.comidObj[mod.componentId]){   //不存在这个定制模块
+                this.importConf.modeIndex+=1;
+                this.importPageThe();
+                return 
+            }
+            let url = "https://wangpu.taobao.com/editor/wpEditor.htm";
+            let param = {
+                _input_charset:"utf-8",
+                _tb_token_:_this.config.token,
+                action:"module/WpContainerOpAction",
+                event_submit_do_AddContainer:true,
+                componentId:mod.componentId,
+                index:_this.importConf.modeIndex,
+                pageId:_this.config.globalData.pageId,
+                moduleData:{}
+            };
+            let res = await _this.getRequest(url,param);
+            try{
+                let res1 = JSON.parse(res);
+                console.log(res1)
+                if(res1.isSuccess && res1.data.widgetId){
+                    mid = res1.data.widgetId;
+                    let url22 = "https://wangpu.taobao.com/editor/wpEditor.htm";
+                    let param22 = {
+                        _input_charset:"utf-8",
+                        _tb_token_:_this.config.token,
+                        event_submit_do_CreateModule:true,
+                        action:"module/WpModuleOpAction",
+                        componentId:mod.componentId,
+                        moduleData:{},
+                        isIsv: isIsv
+                    };
+                    let res22 = await _this.getRequest(url22,param22);
+                    let res21 = res22;
+                    if(typeof(res22) == 'string'){res21 = JSON.parse(res22);}
+                    if(res21.isSuccess){
+                        mid2 = res21.data.widgetId;
+                        delete mod.moduleData.pageIds;
+                        mod.moduleData.moduleEditTitle = mod.moduleData.moduleEditTitle + '-导入';
+                        let res4 = await _this.postMod(mod.moduleData, mid2, mod.componentId);
+                        // console.log(res4)
+                        let res5 = res4;
+                        if(typeof(res4) == 'string'){
+                            res5 = JSON.parse(res4);
+                        }
+                        if(!res5.isSuccess){ alert(res5.message); $("#gm_rq_editor #gmkj-loading-m").hide();}else{
+                            let containerData = {cells:[mid2], cellDataList:{}};
+                            containerData.cellDataList[mid2] = mod.moduleData;
+                            let res6 = await _this.postModContainer(containerData, mid, mod.componentId);
+                            if(!res6.isSuccess){ alert(res6.message)}else{
+                                this.importConf.modeIndex+=1;
+                                _this.importPageThe();
+                            };
+                        }
+                    }else{window.location.reload();}
+                }else{window.location.reload();}
+            }catch(e){window.location.reload();}
+        }else{
+            if(!mod){
+                window.location.reload();
+            }else{
+                this.importConf.modeIndex+=1;
+                this.importPageThe();
+                return 
+            }
+        }
     }
     pageExport(){
-        alert("pageExport")
+        if(this.isPage){
+            
+            let _this = this;
+            // https://wangpu.taobao.com/editor/ajax/WpGetEditorPageData.do?_input_charset=utf-8&_tb_token_=f06ee7bfbae7&pageId=323551771
+            var back = function(){
+                $("#gm_rq_editor #gmkj-loading-m").hide();
+                $("#gm_rq_editor .export_pluin").show();
+                $("#gm_rq_editor #gm_putong").show();
+                $("#gm_rq_editor .gm_input").hide();
+                console.log(_this.pageModeData)
+                let str = JSON.stringify(_this.pageModeData)
+                $("#gm_rq_editor #gm_putong").find("textarea").val(str)
+            }
+            $("#gm_rq_editor").show();
+            $("#gm_rq_editor #gmkj-loading-m").show();
+            this.getPageList(back);
+
+        }else{alert("请打开装修页面")}
     }
     //DES加密
     onedesmodlist(message, key){
-        var keyHex = CryptoJS.enc.Utf8.parse(key);
-        var encrypted = CryptoJS.DES.encrypt(message, keyHex, {
-            mode: CryptoJS.mode.ECB,
-            padding: CryptoJS.pad.Pkcs7
-        });
-        return encrypted.ciphertext.toString();
+        if(typeof(CryptoJS) != 'undefined'){
+            var keyHex = CryptoJS.enc.Utf8.parse(key);
+            var encrypted = CryptoJS.DES.encrypt(message, keyHex, {
+                mode: CryptoJS.mode.ECB,
+                padding: CryptoJS.pad.Pkcs7
+            });
+            return encrypted.ciphertext.toString();
+        }else{return message}
     }
     
     postPageModeList(){
         let me = this;
         setTimeout(()=>{
-            let globalDataText = $('#crx').html(); 
-            $('#crx').remove();
-            me.config.globalData = JSON.parse(globalDataText);
-            this.getIsvModeList();
+            if(!me.config.globalData){
+                let globalDataText = $('#crx').html(); 
+                $('#crx').remove();
+                me.config.globalData = JSON.parse(globalDataText);
+            }
+            this.getIsvModeList("post");
         }, 500)
     }
     postPageModeListTwo(){
-        let one = 'rjkjmkdz123';
-        console.log(this.config.globalData);
+        let one = akkj_name+'mkdz123';
         let globalData = this.config.globalData || null;
         if(globalData && globalData.shopId){
             let oldlen = window.localStorage.getItem("rjke-mode-len");
@@ -1273,6 +1443,7 @@ class miniModule {
             let str = JSON.stringify(this.isvModeData)
             let modlist = this.onedesmodlist(str, one);
             data.modlist = modlist;
+            data.url = 'http://crx.guanmeikj.com/crx/index.php?c=crxapi&m=lists';
             // chrome.runtime.sendMessage('', {message: "post_list", data:data}, function (res) {});
             // 构造数据
             const cEvt = new CustomEvent('miniPostListEvent', { detail: data });
@@ -1502,6 +1673,7 @@ class miniModule {
         script3.innerHTML =str3;
         document.head.appendChild(script3);
         var handler = function(e){_this.onDiyeventFunc(e);};
+        $("body").append("<div id='rjkj_initEnd_event' style='display:none'></div>")
         document.removeEventListener('miniDiyEvent', handler);
         document.addEventListener('miniDiyEvent', handler);
 
@@ -1534,7 +1706,7 @@ class miniModule {
 
     }
 }
-
+// new miniModule();
 
 window.miniMod = new miniModule();
 
