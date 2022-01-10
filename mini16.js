@@ -28,7 +28,7 @@ class miniModule {
 //       if(isMiniModule){
         // setScriptDom("https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.5.0/jquery.min.js");
         // setScriptDom("https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.0.0/crypto-js.min.js");
-        this.init();
+//         this.init();
 //       }
     }
     
